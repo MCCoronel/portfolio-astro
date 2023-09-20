@@ -1,6 +1,6 @@
 ---
 import About from '../About.astro';
-import Typewriter from './Typewriter.tsx';
+import TypewriterComponent from './Typewriter';
 ---
 
 <div class="flex flex-row-reverse items-center justify-center pt-24">
@@ -11,10 +11,10 @@ import Typewriter from './Typewriter.tsx';
           </span></h1>
           <h1 class="text-4xl font-bold">
             I'M
-            <strong class="text-primary"> CORONEL, MARIA CELESTE</strong>
+            <strong class="text-primary"> MARIA CELESTE CORONEL</strong>
           </h1>
-          <div>
-           <Typewriter />
+          <div id="animated-text">
+           <TypewriterComponent client:only="react" />
           </div>
           
     <About />
